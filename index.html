@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UV Radiation</title>
+    <style>
+
+        h1 {
+                text-align: center;
+                font-weight: bold;
+                border: 1px solid #fff;
+                padding: 20px; 
+                border-radius: 4px; 
+        }
+
+
+        h2 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto ;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 17px;
+            margin: 20px  0 20px;
+        }
+
+        ul {
+             font-size: 16px;  
+             line-height: 1.5;
+        }
+
+        button {
+            display: block;
+            padding: 20px auto;
+            background: black;
+            color: white; */
+            font-size: 18px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 5px 5px 10px rgba(0, 0 , 0 , 0.3);
+            transition: all 200ms ease-in-out;
+            margin: 20px auto;
+        }
+
+        button:hover { 
+            opacity: 0.9;
+            cursor: pointer;
+        }
+
+        .container {
+            background-image:linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+            max-width: 800px;
+            margin: 30px auto ;
+            padding: 30px 60px;
+            color: white;
+        }
+
+        .learn-more {
+            color: white; 
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .learn-more:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>
+            UV Radiation
+        </h1>
+        <p>
+            <strong>
+                Ultraviolet (UV)
+            </strong>
+
+            Ultraviolet (UV) radiation is a form of non-ionizing radiation that is emitted by the sun and artificial sources, such as tanning beds. 
+            While it has some benefits for people, including the creation of Vitamin D, it also can cause health risks.
+        </p>
+
+        <ul>
+
+            <li> Our natural source of UV radiation:
+                <ul><li>The sun</li></ul>
+            </li>
+      
+            <li> Some artificial sources of UV radiation include: 
+                <ul>
+                    <li>Tanning beds</li>
+                    <li>Mercury vapor lighting (often found in stadiums and school gyms)</li>
+                    <li> Some halogen, fluorescent, and incandescent lights </li>
+                    <li> Some types of lasers </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <hr />
+
+        <img
+            src="https://www.cdc.gov/nceh/features/uv-radiation-safety/uv-radiation-safety_456px.jpg?_=99589"
+            alt="UV Radiation"
+        />
+
+        <hr />
+
+        <h2>
+            Types of UV Radiation Rays
+        </h2>
+
+        <p>
+            UV radiation is classified into three primary types:
+            <em> ultraviolet A (UVA) </em> 
+            ,<em> ultraviolet B (UVB)</em> 
+            <em> and ultraviolet C (UVC) </em> 
+            , based on their wavelengths. Almost all the UV radiation that reaches earth is UVA though some UVB radiation reaches earth.
+            UVA and UVB radiation can both affect health, but UVA penetrates deeper into the skin and is more constant throughout the year
+        </p>
+
+        <hr />
+
+        <h3> Benefits </h3>
+        <ul>
+            <li>The production of vitamin D, a vitamin essential to human health</li>
+        </ul>
+
+        <p>
+            Vitamin D helps the body absorb calcium and phosphorus from food and assists bone development. 
+            The World Health Organization (WHO) recommends 5 to 15 minutes of sun exposure 2 to 3 times a week
+        </p>
+
+        <hr />
+
+        <h3> Risks </h3>
+        <ul>
+            <li>Sunburn is a sign of short-term overexposure, while premature aging and skin cancer are side effects of prolonged UV exposure</li>
+            <li>UV exposure increases the risk of potentially blinding eye diseases if eye protection is not used</li>
+            <li>Overexposure to UV radiation can lead to serious health issues, including cancer</li>
+        </ul>
+
+        <p>
+            Skin cancer is the most common cancer in the United States. The two most common types of skin cancer are basal cell cancer and squamous cell cancer.
+            Typically, they form on the head, face, neck, hands, and arms because these body parts are the most exposed to UV radiation.
+            Most cases of melanoma, the deadliest kind of skin cancer, are caused by exposure to UV radiation
+
+        </p>
+
+        <a
+            href="https://www.cdc.gov/nceh/features/uv-radiation-safety/index.html"
+            target="_blank"
+            class="learn-more"
+        >
+            Learn more on Wikipedia
+        </a>
+
+        <button class="buy-button">
+            👉 Please click here !
+        </button>
+
+    </div>
+    <script>
+        function buy() {
+            let name = prompt(" What is your name ? ");
+            // let email = prompt(" What is your email address ? ");
+            // let emoji = prompt(" What is your favourite emoji ? ");
+
+            if( name === "")
+            alert("Please enter your name!" ) ;
+            else
+            alert("Thanks, " + name + "  for your attention!" ) ;
+
+        }
+
+        let buyButton = document.querySelector(".buy-button") ;    
+        buyButton.addEventListener("click" , buy);
+
+    </script>
+</body>
+</html>
